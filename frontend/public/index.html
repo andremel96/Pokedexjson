@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="icon" type="image/png" href="./image/imagen1.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>*POKEDEX*</title>
+    <script src="js/api.js"></script>
+</head>
+
+<body class="home">
+    <!--     <div class="ball-top"></div>
+    <div class="flex">
+        <div class="ball-center"></div>
+    </div>
+    <div class="ball-bottom"></div>
+
+    </div> -->
+    <div>
+
+        <div class="wrapper pad">
+            <div class="center">
+                <h1 class="title">Buscar Pokemon</h1>
+                <input type="text" name="pokename" id="pokename">
+                <button onclick="getPokemonInformations()">Buscar</button>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="center">
+                <div class="imagediv">
+                    <img id="pokeImage" src="" alt="Imagen no disponible" srcset="">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="center">
+                <table id="pokemon">
+                    <tr>
+                        <th>Característica</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tbody id="descripciones"></tbody>
+                </table>
+                <div id="evo" class="row">
+
+                </div>
+            </div>
+
+        </div>
+        <div class="wrapper pad">
+            <div class="center">
+                <div>
+                    <h1 class="title">Filtrar Pokemon</h1>
+                    <input type="text" name="pokeType" id="pokeType">
+                    <button onclick="getPokemonTypes()">Filtrar Tipo</button>
+                </div>
+                <br>
+                <div class="divBorder">
+                    <label class="black-back" for="minVal">Minimo</label>
+                    <input type="number" name="minVal" id="minVal">
+                    <br>
+                    <label class="black-back" for="maxVal">Máximo</label>
+                    <input type="number" name="maxVal" id="maxVal">
+                    <br>
+                    <button onclick="fechtPokemonExperience()">Filtrar experiencia</button>
+                </div>
+                <br>
+                <div class="divBorder">
+                    <button onclick="fechtPokemonHeight()">Filtrar por Altura</button>
+                    <br>
+                    <button onclick="fechtPokemonWeight()">Filtrar por Peso</button>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="center">
+                <table id="pokemon">
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Experiencia</th>
+                        <th>Peso</th>
+                        <th>Altura</th>
+                    </tr>
+                    <tbody id="pokefilter"></tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
